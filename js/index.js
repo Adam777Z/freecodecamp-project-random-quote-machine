@@ -3,10 +3,10 @@ localStorage.setItem('example_project', 'Random Quote Machine');
 
 $(document).ready(function() {
 	getQuote();
-});
 
-$('#new-quote').click(function() {
-	getQuote();
+	$('#new-quote').click(function() {
+		getQuote();
+	});
 });
 
 function getQuote() {
