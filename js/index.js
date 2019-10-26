@@ -4,7 +4,7 @@ localStorage.setItem('example_project', 'Random Quote Machine');
 var quotes;
 
 $(document).ready(function() {
-	$.getJSON('https://adam777z.github.io/projects/random-quote-machine/json/quotesondesign.json', function(data) {
+	$.getJSON('https://adam777z.github.io/projects/random-quote-machine/json/quotes.json', function(data) {
 		quotes = data;
 
 		getQuote();
@@ -17,8 +17,8 @@ $(document).ready(function() {
 
 function getQuote() {
 	var i = randomIntFromInterval(0, quotes.length);
-	var quote = $.trim($($.parseHTML(quotes[i]['content']['rendered'])).text());
-	var author = quotes[i]['title']['rendered'];
+	var quote = quotes[i]['text'];
+	var author = quotes[i]['author'];
 	var tweetText = '"' + quote + '" - ' + author;
 
 	$('blockquote p').html(quote);
