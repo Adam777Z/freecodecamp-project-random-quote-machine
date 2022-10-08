@@ -4,7 +4,7 @@ localStorage.setItem('example_project', 'Random Quote Machine');
 var quotes;
 
 $(document).ready(function() {
-	$.getJSON('./json/quotes.json', function(data) {
+	$.getJSON('./assets/json/quotes.json', function(data) {
 		quotes = data;
 
 		getQuote();
