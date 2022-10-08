@@ -21,8 +21,8 @@ function getQuote() {
 	var author = quotes[i]['author'];
 	var tweetText = '"' + quote + '" - ' + author;
 
-	$('blockquote p').html(quote);
-	$('blockquote footer cite').html(author).attr('title', author);
+	$('#text').html(quote);
+	$('#author').html(author).attr('title', author);
 	$('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText));
 }
 

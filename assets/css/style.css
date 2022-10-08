@@ -1,8 +1,4 @@
-.jumbotron {
-	margin-top: 2rem;
-}
-
-blockquote {
+#quote {
 	border-left: 5px solid #ddd;
 	padding: 0.5rem 1rem;
 }

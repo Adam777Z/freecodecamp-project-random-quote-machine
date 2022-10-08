@@ -14,27 +14,25 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="jumbotron p-4">
-					<div id="quote-box" class="container">
+		<div class="p-4 my-4 bg-light rounded-3">
+			<div class="row">
+				<div class="col">
+					<div id="quote-box">
 						<h1 id="title" class="text-center">Random Quote Machine</h1>
 
-						<blockquote class="blockquote">
-							<p id="text" class="mb-0"></p>
-							<footer id="author" class="blockquote-footer"><cite title=""></cite></footer>
-						</blockquote>
+						<figure id="quote">
+							<blockquote class="blockquote">
+								<p id="text"></p>
+							</blockquote>
+							<figcaption class="blockquote-footer mb-0">
+								<cite id="author" title=""></cite>
+							</figcaption>
+						</figure>
 
-						<div class="row">
-							<div class="col">
-								<a id="tweet-quote" class="btn btn-primary" href="#" target="_blank"><i class="bi bi-twitter"></i> Tweet this Quote</a>
-							</div>
-							<div class="col d-flex justify-content-center align-items-end">
-								<span id="credits">(Quotes source: <a href="https://github.com/JamesFT/Database-Quotes-JSON" target="_blank">Database Quotes JSON</a>)</span>
-							</div>
-							<div class="col text-right">
-								<button id="new-quote" class="btn btn-info" type="button"><i class="bi bi-shuffle"></i> New Random Quote</button>
-							</div>
+						<div class="d-flex justify-content-between">
+							<a id="tweet-quote" class="btn btn-primary" href="#" target="_blank"><i class="bi bi-twitter"></i> Tweet this Quote</a>
+							<span id="credits" class="align-self-center">(Quotes source: <a href="https://github.com/JamesFT/Database-Quotes-JSON" target="_blank">Database Quotes JSON</a>)</span>
+							<button id="new-quote" class="btn btn-info" type="button"><i class="bi bi-shuffle"></i> New Random Quote</button>
 						</div>
 					</div>
 				</div>
