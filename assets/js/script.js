@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
 
 	document.querySelector('#new-quote').addEventListener('click', (event2) => {
-		// event2.preventDefault();
 		getQuote();
 	});
 });
@@ -34,8 +33,8 @@ function getQuote() {
 	let author = quotes[i]['author'];
 	let tweetText = '"' + quote + '" - ' + author;
 
-	document.querySelector('#text').innerHTML = quote;
-	document.querySelector('#author').innerHTML = author
+	document.querySelector('#text').textContent = quote;
+	document.querySelector('#author').textContent = author
 	document.querySelector('#author').setAttribute('title', author);
 	document.querySelector('#tweet-quote').setAttribute('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText));
 }
